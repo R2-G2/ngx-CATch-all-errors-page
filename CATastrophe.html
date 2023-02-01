@@ -1,0 +1,14 @@
+<!doctype html>
+<!-- Copyright (c) 2022 Ralf Grawunder -->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><!--# echo var="status" default="CATastrophe" --><!--# if expr="$CATegory" --><!--# echo var="CATegory" --><!--# else --> <!--# echo var="hostname" default="=^..^=" --><!--# endif --></title>
+        <style>
+            body {display:flex;height:100vh;margin:0;background-color:<!--# echo var="CATlitter" default="#fff" -->;justify-content:center;align-items:center;}
+        </style>
+    </head>
+    <body>
+        <img src="<!--# echo var="CATalog" default="https://http.cat" -->/<!--# echo var="status" default="0" -->.jpg" alt="<!--# echo var="status" default="CATastrophe" -->"/>
+    </body>
+</html>
