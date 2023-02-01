@@ -1,4 +1,4 @@
-<!-- Copyright (c) 2022 Ralf Grawunder -->
+<!-- Copyright (c) 2022-2023 Ralf Grawunder -->
 
 # ngx-CATch-all-errors-page: [**HTTP Cats API**](https://github.com/httpcats/http.cat) powered error_page
 
