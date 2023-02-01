@@ -4,6 +4,8 @@
 
 ## Usage
 
+### General
+
 Set up the **Nginx** *error_page* inside the *server* block and create a *SSI* enabled alias to the *HTML* file.
 
 ```nginx
@@ -14,11 +16,13 @@ error_page 505 =500;
 recursive_error_pages on;
 
 location = /error_page.html {
-    # git clone https://gist.github.com/624fc74e07326db19d6843d87ebee0d7.git /CUSTOM/PATH
+    # git clone https://github.com/R2-G2/ngx-CATch-all-errors-page.git /CUSTOM/PATH
     alias /CUSTOM/PATH/CATastrophe.html;
     ssi on;
 }
 ```
+
+### Personal
 
 Optinally define a custom location to load the images from a different (local) place than the **HTTP Cats API** itself,
 some sort of a title and a custom background color.
@@ -36,7 +40,7 @@ location /CATacomb/ {
 }
 
 location = /CATaclysm.html {
-    # git clone https://gist.github.com/624fc74e07326db19d6843d87ebee0d7.git /opt/ngx-CATch-all-errors-page
+    # git clone https://github.com/R2-G2/ngx-CATch-all-errors-page.git /opt/ngx-CATch-all-errors-page
     alias /opt/ngx-CATch-all-errors-page/CATastrophe.html;
     ssi on;
     set $CATalog "/CATacomb";
